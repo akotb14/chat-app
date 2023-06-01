@@ -122,8 +122,6 @@ export const getUsers = async (req, res, nxt) => {
         return element;
       }
     });
-
-    console.log(newOnlineUser.length);
     res.status(200).json({ status: true, user, newOnlineUser });
   } catch (e) {
     return res.status(500).json({ status: false, message: "cant fetch data" });

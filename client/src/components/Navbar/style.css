@@ -79,15 +79,15 @@
   padding-left: 4px;
 }
 .online-people {
-  border-width: 1px 0 1px 0;
+  border-width: 2px 1px 3px 1px;
   border-style: solid;
-  background-color: rgba(254, 252, 252, 0.899);
+  background-color: rgba(66, 5, 71, 0.899);
   padding-top: 5px;
-  border-color: rgb(67, 4, 63);
+  border-color: rgb(85, 12, 80);
   margin-left: 10px;
   height: fit-content;
   display: flex;
-  border-radius: 3px;
+  border-radius: 1.5px;
   flex-direction: column;
 }
 .text-online {

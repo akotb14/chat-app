@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
@@ -9,14 +9,14 @@ function Navbar({ items, chathand }) {
   const navigator = useNavigate();
   const [user, setUser] = useState([]);
 
-  const [onlineUser, setOnlineUser] = useState([]);
+  // const [onlineUser, setOnlineUser] = useState([]);
 
   useEffect(() => {
     const response = async () => {
       const users = await axios.get(`${getUsers}/${items._id}`);
       const data = users.data.user;
       setUser(data);
-      setOnlineUser(users.data.newOnlineUser);
+      // setOnlineUser(users.data.newOnlineUser);
     };
     response();
   }, [items]);
@@ -30,26 +30,26 @@ function Navbar({ items, chathand }) {
     navigator("/");
   };
 
-  const onlineUserMap = onlineUser.map((el) => {
-    if (el.username) {
-      return (
-        <SwiperSlide key={el._id}>
-          <div className="f">
-            <div className="f">
-              <img
-                className="profile-people"
-                src={`http://localhost:5000/image/${el.profileImage}`}
-                alt=""
-              />
-              <div className="dot"></div>
-            </div>
-          </div>
-        </SwiperSlide>
-      );
-    } else {
-      return <div style={{ paddingBottom: "5px" }}></div>;
-    }
-  });
+  // const onlineUserMap = onlineUser.map((el) => {
+  //   if (el.username) {
+  //     return (
+  //       <SwiperSlide key={el._id}>
+  //         <div className="f">
+  //           <div className="f">
+  //             <img
+  //               className="profile-people"
+  //               src={`http://localhost:5000/image/${el.profileImage}`}
+  //               alt=""
+  //             />
+  //             <div className="dot"></div>
+  //           </div>
+  //         </div>
+  //       </SwiperSlide>
+  //     );
+  //   } else {
+  //     return <div style={{ paddingBottom: "5px" }}></div>;
+  //   }
+  // });
   return (
     <>
       <div className="navbar-silder">
@@ -69,21 +69,6 @@ function Navbar({ items, chathand }) {
           <span>My Account</span>
         </div>
         <div className="online-people">
-          <div className="text-online">
-            <span>Online now</span>
-            <div>{onlineUser.length}</div>
-          </div>
-
-          <div className="img-list">
-            <Swiper
-              spaceBetween={4}
-              slidesPerView={5}
-              onSlideChange={() => console.log("slide change")}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              {onlineUserMap}
-            </Swiper>
-          </div>
         </div>
         <div className="list-people">
           <span className="text-chat">Users</span>
