@@ -1,0 +1,126 @@
+.main-container {
+  padding: 45px 50px 10px;
+  width: 92%;
+  border-radius: 5px;
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+}
+.nav-chat-app {
+  height: 10%;
+  display: flex;
+  width: 22%;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #00000014;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-chat-app img {
+  margin-bottom: 15px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header span:first-of-type {
+  color: rgba(128, 128, 128, 0.71);
+  font-size: 18px;
+}
+header span:last-of-type {
+  color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2px;
+}
+.chat-messages {
+  margin-top: 20px;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 77%;
+  gap: 14px;
+}
+.chat-messages::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+.send-message {
+  color: #000000;
+  max-width: 70%;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 12px 12px 0 12px;
+  max-height: 600px;
+  align-self: end;
+  margin-right: 15px;
+  word-wrap: break-word;
+  background-color: rgba(212, 189, 213, 0.238);
+}
+
+.recieve-message {
+  color: #000000;
+  max-width: 70%;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 12px 12px 12px 0;
+  max-height: 600px;
+  background-color: rgba(7, 7, 7, 0.997);
+  color: white;
+  word-wrap: break-word;
+}
+.input-message {
+  padding: 0;
+  display: flex;
+  height: 11%;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  gap: 11px;
+  align-items: center;
+  flex-direction: row;
+  background-color: ghostwhite;
+}
+.input-message img {
+  width: 60px;
+  height: 60px;
+}
+
+.input-message input {
+  border-width: 0 0 1px;
+  border-radius: 0;
+  font-size: 18px;
+}
+.input-message button {
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(67, 4, 63);
+  color: #f5f5f5;
+}
+
+.welcome {
+  background-image: url("../../assets/p.jpg");
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  font-size: 4.9rem;
+  font-weight: bold;
+  font-family: bsans-serif;
+}

@@ -1,0 +1,35 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.navbar {
+  display: flex;
+  width: 35%;
+  background-color: rgb(255, 255, 255);
+}
+.main {
+  width: 65%;
+  height: 100%;
+  background-color: rgb(67, 4, 63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wContainer{
+width: 65%;
+}
+.welcome{
+  background-image: url('../../assets/p.jpg');
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  font-size: 4.9rem;
+  font-weight: bold;
+  font-family: bsans-serif;
+}

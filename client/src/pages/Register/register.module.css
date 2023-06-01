@@ -1,0 +1,97 @@
+.formContainer {
+  background-image: url("../../assets/p.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.text {
+  border: 4px solid white;
+  border-radius: 80px 10px ;
+  padding: 25px;
+  box-shadow: -15px 15px 8px 5px  black  ;
+  font-size: 4em;
+}
+
+div {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+form {
+  background-color: #33095a;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  height: 550px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+
+  padding-top: 20px;
+}
+input {
+  width: 60%;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.divBtn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+button {
+  margin: 30px 0 10px 0;
+  width: 30%;
+  height: 44px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 19px;
+}
+.txtLogin {
+  font-size: 1rem;
+}
+.txtLogin a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 5px;
+  margin-left: 5px;
+}
+@media screen and (max-width: 932px) {
+  .formContainer {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .text {
+    font-size: 45px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: none ;
+    padding: 0px;
+    box-shadow: none ;
+  }
+  form{
+   width: 80%;
+   height: 500px;
+  }
+  
+}
+.loginForm form{
+  height: 450px;
+}
+.loginForm button{
+  margin-bottom: 15px;
+}
