@@ -3,7 +3,7 @@ class ConnectDB {
   static connect_DB() {
     mongoose.set("strictQuery", true);
     mongoose
-      .connect("mongodb://localhost:27017/test", {
+      .connect("mongodb://localhost:27017/test1", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       })

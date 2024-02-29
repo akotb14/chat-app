@@ -15,6 +15,23 @@
   padding: 25px;
   box-shadow: -15px 15px 8px 5px  black  ;
   font-size: 4em;
+  animation: animate 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes animate{
+  0%{
+    color: #7c099c20;
+    text-shadow: none;
+  }
+  100%{
+    color: #fff;
+    text-shadow: 0 0 10px #f00be59a,
+    0 0 20px #f00be59a,
+    0 0 40px #f00be59a,
+    0 0 80px #f00be59a,
+    0 0 160px #f00be59a
+    ;
+  }
 }
 
 div {
@@ -67,9 +84,11 @@ button {
   font-size: 17px;
   padding: 5px;
   margin-left: 5px;
+  color: #33095a;
 }
 @media screen and (max-width: 932px) {
   .formContainer {
+    
     width: 100%;
     height: 100vh;
     flex-direction: column-reverse;
@@ -84,8 +103,8 @@ button {
     box-shadow: none ;
   }
   form{
-   width: 80%;
-   height: 500px;
+   width: 60%;
+   height: 550px;
   }
   
 }

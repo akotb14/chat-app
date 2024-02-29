@@ -123,9 +123,20 @@
   padding: 0 15px;
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 96%;
   overflow: auto;
   gap: 10px;
+}
+@media screen and (max-width: 988px) {
+  .container-people{
+    padding: 0;
+    width: 100%;
+  }
+  .navbar-list{
+    width: 94%;
+    padding: 8px;
+  }
+  
 }
 .container-people::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

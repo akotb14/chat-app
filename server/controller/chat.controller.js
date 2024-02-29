@@ -28,6 +28,7 @@ export const getMessages = async (req, res) => {
         },
       })
       .sort({ updatedAt: 1 });
+      console.log(sender , " c " ,recieve);
     const messageSender = getMessage.map((mes) => {
       return { message: mes.message.text, sender: mes.sender }; 
     });

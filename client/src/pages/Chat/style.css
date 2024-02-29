@@ -17,10 +17,10 @@
   justify-content: center;
 }
 .wContainer{
-width: 65%;
+  width: 65%;
 }
-.welcome{
-  background-image: url('../../assets/p.jpg');
+.welcome {
+  background-image: url("../../assets/p.jpg");
   width: 100%;
   height: 100%;
   margin: 0;
@@ -32,4 +32,37 @@ width: 65%;
   font-size: 4.9rem;
   font-weight: bold;
   font-family: bsans-serif;
+  animation: animate 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes animate{
+  0%{
+    color: #7c099c20;
+    text-shadow: none;
+  }
+  100%{
+    color: #fff;
+    text-shadow: 0 0 10px #f00be59a,
+    0 0 20px #f00be59a,
+    0 0 40px #f00be59a,
+    0 0 80px #f00be59a,
+    0 0 160px #f00be59a
+    ;
+  }
+}
+@media screen and (max-width: 1111px) {
+  .welcome{
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 988px) {
+  .navbar{
+    width: 42%;
+  }
+  .main{
+    width: 58%;
+  }
+  .wContainer{
+    width: 55%;
+  }
 }
