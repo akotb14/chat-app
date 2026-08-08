@@ -1,4 +1,4 @@
-export const host = "http://localhost:5000";
+export const host = "https://chat-app-xi-opal-51.vercel.app";
 export const register = `${host}/api/register`;
 export const login = `${host}/api/login`;
 export const getUser = `${host}/api/getUser`;
