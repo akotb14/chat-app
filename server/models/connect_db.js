@@ -3,7 +3,7 @@ class ConnectDB {
   static connect_DB() {
     mongoose.set("strictQuery", true);
     mongoose
-      .connect("mongodb://localhost:27017/test1", {
+      .connect("mongodb+srv://ahmed17:medocool14@cluster0.rlkfc4g.mongodb.net/chat-app", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
       })
