@@ -61,3 +61,4 @@ io.on("connection", (socket) => {
 });
 
 export const onlineU = global.onlineUsers;
+export default app;
