@@ -32,7 +32,7 @@ const server = app.listen(port, () => {
 // Socket.IO enforces CORS on its handshake, and the origin here must be where
 // the *client* is served from — not this server's own URL. Comma-separate to
 // allow several (e.g. local dev plus the deployed front end).
-const clientOrigins = (process.env.CLIENT_ORIGIN || "http://localhost:3000")
+const clientOrigins = (process.env.CLIENT_ORIGIN || "http://localhost:5000")
   .split(",")
   .map((o) => o.trim())
   .filter(Boolean);
