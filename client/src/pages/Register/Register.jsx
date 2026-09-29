@@ -93,7 +93,7 @@ const Register = () => {
     } catch (err) {
       setError(
         err.response?.data?.message ||
-          "Could not reach the server. Is it running on port 5000?"
+          "Could not reach the server."
       );
     } finally {
       setLoading(false);
