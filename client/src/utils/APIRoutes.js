@@ -1,4 +1,7 @@
-export const host = process.env.HOST || "http://localhost:3000";
+// Set REACT_APP_API_HOST in client/.env to point at a deployed server. Only
+// REACT_APP_-prefixed variables reach the browser bundle, so this must not be
+// renamed back to a bare HOST.
+export const host = process.env.REACT_APP_API_HOST || "http://localhost:5000";
 export const register = `${host}/api/register`;
 export const login = `${host}/api/login`;
 export const getUser = `${host}/api/getUser`;

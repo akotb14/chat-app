@@ -1,0 +1,17 @@
+{
+  "name": "chatapp-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scripted screen-demo driver for ChatApp. Playwright drives the app on a fixed timeline; you record the screen with OBS.",
+  "scripts": {
+    "prepare-data": "node prepare.mjs",
+    "reset": "node reset.mjs",
+    "demo": "node demo.mjs",
+    "demo:slow": "node demo.mjs --pace 1.35",
+    "demo:fast": "node demo.mjs --pace 0.75"
+  },
+  "dependencies": {
+    "playwright": "1.44.1"
+  }
+}

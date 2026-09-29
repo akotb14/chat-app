@@ -1,0 +1,23 @@
+node_modules/
+*.log
+.server.log
+.client.log
+
+# Downloaded profile pictures — prepare-data refetches them on first run
+avatars/
+
+# Video editing scratch — rebuilt by dem-video/edit.mjs
+dem-video/_build/
+dem-video/_frames/
+
+# Raw captures. Large, and reproducible by re-recording.
+*.mkv
+dem-video/my-chat-app.mp4
+
+# Everything under dem-video/out/ is generated, so ignore it by default …
+dem-video/out/*
+
+# … except the two small files the READMEs actually link to. The 1080p master
+# is 10 MB and belongs on a GitHub release, not in git history.
+!dem-video/out/chatapp-demo.gif
+!dem-video/out/poster.jpg

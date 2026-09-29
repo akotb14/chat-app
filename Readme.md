@@ -45,14 +45,17 @@ The interesting parts:
 
 ---
 
-## Screenshots
+## Demo
 
-| | |
-| --- | --- |
-| Sign in | Register |
-| Conversation | Mobile |
+![Two windows side by side, a message appearing in both the instant it is sent](demo/dem-video/out/chatapp-demo.gif)
 
-> Drop your captures in `docs/` and link them here.
+Two browser windows, two accounts, one conversation — the message lands on the
+right the moment it leaves the left. No refresh, no polling.
+
+The whole run is scripted, so it is reproducible rather than a lucky take:
+Playwright drives both windows through sign-up, browsing, a live exchange, and a
+resize down to mobile. See [demo/](demo/) for how to record it and
+[demo/dem-video/](demo/dem-video/) for the edit pipeline.
 
 ---
 

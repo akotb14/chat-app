@@ -132,6 +132,7 @@ const Register = () => {
           <div className="flex items-center gap-4">
             <button
               type="button"
+              aria-label="Choose profile photo"
               onClick={() => fileInput.current?.click()}
               className="group relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-white/[0.1] bg-night-800/80 shadow-rim transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-500/50 hover:shadow-glow"
             >

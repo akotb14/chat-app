@@ -25,13 +25,21 @@ ConnectDB.connect_DB();
 app.use("/api/", UserRoute);
 app.use("/api/", ChatRoute);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const server = app.listen(port, () => {
   console.log("listening on port", port);
 });
+// Socket.IO enforces CORS on its handshake, and the origin here must be where
+// the *client* is served from — not this server's own URL. Comma-separate to
+// allow several (e.g. local dev plus the deployed front end).
+const clientOrigins = (process.env.CLIENT_ORIGIN || "http://localhost:3000")
+  .split(",")
+  .map((o) => o.trim())
+  .filter(Boolean);
+
 const io = new Server(server, {
   cors: {
-    origin: process.env.HOST || `http://localhost:${port}`,
+    origin: clientOrigins,
     credentials: true,
   },
 });
