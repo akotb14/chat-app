@@ -44,6 +44,12 @@ const io = new Server(server, {
   },
 });
 
+app.use(
+  cors({
+    origin: clientOrigins,
+    credentials: true,
+  })
+);
 global.onlineUsers = new Map();
 const userOnline = [];
 io.on("connection", (socket) => {
