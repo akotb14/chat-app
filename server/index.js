@@ -39,7 +39,7 @@ const clientOrigins = (process.env.CLIENT_ORIGIN || "https://chat-app-atfn.verce
 
 const io = new Server(server, {
   cors: {
-    origin: clientOrigins,
+    origin: "https://chat-app-atfn.vercel.app",
     credentials: true,
   },
 });
